@@ -1,0 +1,453 @@
+* {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0;
+     font-family: "Poppins", Arial, sans-serif;
+     color: #d47784;
+     line-height: 1.6;
+     background-color: #d47784;
+ }
+
+ .category-section {
+     padding: 90px 7%;
+     margin: 24px 0;
+     background-color: #ffffff;
+     text-align: center;
+     border: 1px rgb(255, 255, 255);
+ }
+
+ .category-heading h1 {
+     color: #d47784;
+     font-size: 35px;
+     letter-spacing: 3px;
+ }
+
+ .category-heading h2 {
+     font-family: 'Playfair Display', serif;
+     font-size: 20px;
+     font-weight: 400;
+     color: #8b625b;
+     margin-top: 15px;
+ }
+
+ .category-heading p {
+     color: #916c65;
+     font-size: 16px;
+     margin-top: 12px;
+     margin-bottom: 45px;
+ }
+
+ .category-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+ }
+
+ .category-card {
+     background-color: #d47784;
+     padding: 40px 25px;
+     border-radius: 18px;
+     border: 1px solid #f3ded9;
+     box-shadow: 0 5px 20px rgba(150, 100, 100, 0.07);
+     transition: 0.3s;
+ }
+
+ .category-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 12px 25px rgba(150, 100, 100, 0.13);
+ }
+
+ .category-icon {
+     font-size: 45px;
+     margin-bottom: 20px;
+ }
+
+ .category-card h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 25px;
+     font-weight: 500;
+     color: #ffffff;
+     margin-bottom: 15px;
+ }
+
+ .category-card p {
+     color: #ffffff;
+     font-size: 14px;
+     line-height: 1.8;
+     min-height: 100px;
+ }
+
+ .category-card a {
+     display: inline-block;
+     margin-top: 20px;
+     text-decoration: none;
+     color: #d47784;
+     font-size: 14px;
+     font-weight: 600;
+     transition: 0.3s;
+ }
+
+ .category-card a:hover {
+     color: #a94e60;
+ }
+
+ @media (max-width: 768px) {
+     .category-container {
+         grid-template-columns: 1fr;
+     }
+
+     .category-heading h2 {
+         font-size: 32px;
+     }
+
+     .category-card {
+         padding: 30px 20px;
+     }
+ }
+
+ main {
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 16px;
+ }
+
+ section {
+     background-color: white;
+     border: 1px solid #eadfd3;
+     border-radius: 10px;
+     padding: 24px;
+     margin: 24px 0;
+ }
+
+ .produk-container {
+     max-width: 1400px;
+     margin: auto;
+     background: #fffdfb;
+     padding: 45px 50px;
+     border-radius: 30px;
+     box-shadow: 0 8px 25px rgba(150, 80, 80, 0.08);
+ }
+
+ h1 {
+     font-family: Georgia, serif;
+     font-size: 30px;
+     color: #a36c70;
+     margin-bottom: 12px;
+ }
+
+ .deskripsi {
+     font-size: 15px;
+     color: #93666a;
+     margin-bottom: 30px;
+     line-height: 1.6;
+ }
+
+ .table-responsive {
+     width: 100%;
+     overflow-x: auto;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: separate;
+     border-spacing: 0;
+     border: 1px solid #f5d8ca;
+     border-radius: 22px;
+     overflow: hidden;
+     text-align: center;
+ }
+
+ th {
+     background: #fce2d0;
+     color: #704247;
+     font-size: 18px;
+     padding: 24px 15px;
+ }
+
+ td {
+     padding: 15px;
+     border-top: 1px solid #f5dfd3;
+     border-right: 1px solid #f5dfd3;
+     font-size: 17px;
+     background: #fffdfb;
+ }
+
+ .foto {
+     width: 25%;
+ }
+
+ .foto img {
+     width: 100%;
+     max-width: 270px;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 20px;
+     display: block;
+     margin: auto;
+ }
+
+ .nama-produk {
+     width: 24%;
+     font-size: 18px;
+     font-weight: 500;
+     text-align: left;
+     padding-left: 25px;
+     line-height: 1.5;
+ }
+
+ .small,
+ .large,
+ .extra {
+     display: inline-block;
+     min-width: 150px;
+     padding: 12px 18px;
+     border-radius: 30px;
+     font-size: 16px;
+     font-weight: 500;
+ }
+
+ .Small {
+     background: #ffd5dd;
+     color: #82434e;
+ }
+
+ .Medium {
+     background: #fbe2ce;
+     color: #875d45;
+ }
+
+ .Large {
+     background: #ead6ee;
+     color: #79527f;
+ }
+
+ td:last-child {
+     color: #784449;
+     font-size: 17px;
+ }
+
+ tbody tr:hover td {
+     background: #fff5f3;
+     transition: 0.3s;
+ }
+
+ .catatan {
+     margin-top: 25px;
+     color: #9b696d;
+     font-size: 16px;
+ }
+
+ @media (max-width: 700px) {
+
+     body {
+         padding: 20px 10px;
+     }
+
+     .produk-container {
+         padding: 25px 15px;
+     }
+
+     h1 {
+         font-size: 30px;
+     }
+
+     .deskripsi {
+         font-size: 14px;
+     }
+
+     table {
+         min-width: 750px;
+     }
+ }
+
+ .contact-section {
+     background: #fff5f4;
+     padding: 65px 45px;
+     margin: 50px auto;
+     max-width: 1400px;
+     border-radius: 25px;
+ }
+
+ /* HEADING */
+ .contact-heading {
+     text-align: center;
+     margin-bottom: 45px;
+ }
+
+ .contact-heading h1 {
+     font-family: Georgia, serif;
+     font-size: 40px;
+     color: #b8757b;
+     border: none;
+ }
+
+ .contact-heading h2 {
+     color: #70464b;
+     font-size: 25px;
+     margin: 12px 0;
+ }
+
+ .contact-heading p {
+     color: #89696b;
+     line-height: 1.8;
+     max-width: 650px;
+     margin: auto;
+ }
+
+ .contact-wrapper {
+     display: grid;
+     grid-template-columns: 1fr 1.3fr;
+     gap: 35px;
+ }
+
+ .contact-details h3,
+ .location-details h3 {
+     color: #a96870;
+     font-size: 23px;
+     margin-bottom: 20px;
+ }
+
+ .contact-card {
+     display: flex;
+     align-items: center;
+     gap: 18px;
+     background: white;
+     padding: 20px;
+     border-radius: 15px;
+     margin-bottom: 15px;
+     box-shadow: 0 4px 12px #eacccc40;
+ }
+
+ .contact-icon {
+     background: #ffe0e4;
+     color: #b8757b;
+     width: 45px;
+     height: 45px;
+     min-width: 45px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 24px;
+ }
+
+ .contact-card h4 {
+     color: #70464b;
+     margin-bottom: 7px;
+ }
+
+ .contact-card p {
+     color: #89696b;
+     font-size: 14px;
+     line-height: 1.6;
+ }
+
+ .contact-card a {
+     display: inline-block;
+     color: #b8757b;
+     text-decoration: none;
+     font-weight: bold;
+     margin-top: 8px;
+ }
+
+ /* GOOGLE MAPS */
+ .location-desc {
+     color: #89696b;
+     margin-bottom: 20px;
+     line-height: 1.6;
+ }
+
+ .maps-container {
+     overflow: hidden;
+     border-radius: 18px;
+     box-shadow: 0 5px 15px #eacccc50;
+ }
+
+ .maps-container iframe {
+     width: 100%;
+     height: 350px;
+     display: block;
+ }
+
+ .maps-button {
+     display: inline-block;
+     background: #f2d8d5;
+     color: #89565c;
+     padding: 13px 25px;
+     border-radius: 25px;
+     margin-top: 20px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+ }
+
+ .maps-button:hover {
+     background: #e9b9bd;
+ }
+
+ .contact-order {
+     text-align: center;
+     margin-top: 55px;
+     padding: 35px 20px;
+     background: white;
+     border-radius: 20px;
+ }
+
+ .contact-order h3 {
+     color: #a96870;
+     font-family: Georgia, serif;
+     font-size: 27px;
+     margin-bottom: 12px;
+ }
+
+ .contact-order p {
+     color: #89696b;
+     line-height: 1.8;
+     margin-bottom: 22px;
+ }
+
+ .btn-order {
+     display: inline-block;
+     background: #c9878c;
+     color: white;
+     padding: 14px 35px;
+     border-radius: 30px;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+
+ .btn-order:hover {
+     background: #a96870;
+ }
+
+ @media (max-width: 768px) {
+
+     .contact-section {
+         padding: 35px 18px;
+     }
+
+     .contact-wrapper {
+         grid-template-columns: 1fr;
+     }
+
+     .contact-heading h1 {
+         font-size: 32px;
+     }
+
+     .contact-heading h2 {
+         font-size: 21px;
+     }
+
+     .maps-container iframe {
+         height: 280px;
+     }
+ }
+
+ footer {
+     background-color: #ffffff;
+     color: #d47784;
+     text-align: center;
+     padding: 16px;
+ }
